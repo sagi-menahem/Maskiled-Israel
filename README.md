@@ -50,6 +50,18 @@ The site is Hebrew-only with full RTL support. Instead of a traditional checkout
 
 ---
 
+## How This Was Built
+
+Built solo, **AI-first**: I orchestrate AI coding agents (Claude Code, Codex) through a documented methodology rather than writing every line by hand — the engineering discipline is the point, not the speed.
+
+- **`AGENTS.md` as the single source of truth** — a rules file in the repo defines the architecture, conventions, and hard constraints every agent must obey: money never in floats, Tailwind logical properties only for RTL (no hardcoded `left`/`right`), every admin mutation re-checks role server-side inside the Server Action itself.
+- **Guardrail scripts & audit pipelines** — automated checks run on every change (RTL correctness, Server Action authorization, transactional-money rules), so quality is enforced by tooling, not vigilance.
+- **The engineer decides, the agent executes** — every schema, content flow, and architectural choice on this page was designed and reviewed by me. Agents accelerate implementation; they never own the design.
+
+The result: one engineer delivering a production system at team-level velocity — with the discipline the decisions below reflect.
+
+---
+
 ## Highlights
 
 - **Custom CMS** — every section of the public site (hero, navbar, footer, contact, FAQ, testimonials, projects, theme colors, legal pages) is editable through a purpose-built admin panel; no code deploys for content edits
