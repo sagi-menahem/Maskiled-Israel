@@ -44,7 +44,7 @@
 
 ## About
 
-**Maskiled Israel** (מסכילד ישראל) is a production e-commerce platform for an LED screens vendor, built end-to-end as the sole engineer. The codebase itself is private — this README is the portfolio-facing summary covering the architecture, engineering decisions, and screenshots that I can share publicly.
+**Maskiled Israel** (מסכילד ישראל) is a production e-commerce platform for an LED screens vendor. Built for Agentical (agentical.agency) as their client's platform — I was the sole engineer on the codebase. The source itself is private — this README is the portfolio-facing summary covering the architecture, engineering decisions, and screenshots that I can share publicly.
 
 The site is Hebrew-only with full RTL support. Instead of a traditional checkout, every product CTA opens a pre-filled WhatsApp conversation with the vendor — chosen deliberately to match how the client actually closes deals.
 
@@ -52,7 +52,7 @@ The site is Hebrew-only with full RTL support. Instead of a traditional checkout
 
 ## How This Was Built
 
-Built solo, **AI-first**: I orchestrate AI coding agents (Claude Code, Codex) through a documented methodology rather than writing every line by hand — the engineering discipline is the point, not the speed.
+**AI-first**: I orchestrate AI coding agents (Claude Code, Codex) through a documented methodology rather than writing every line by hand — the engineering discipline is the point, not the speed.
 
 - **`AGENTS.md` as the single source of truth** — a rules file in the repo defines the architecture, conventions, and hard constraints every agent must obey: money never in floats, Tailwind logical properties only for RTL (no hardcoded `left`/`right`), every admin mutation re-checks role server-side inside the Server Action itself.
 - **Guardrail scripts & audit pipelines** — automated checks run on every change (RTL correctness, Server Action authorization, transactional-money rules), so quality is enforced by tooling, not vigilance.
