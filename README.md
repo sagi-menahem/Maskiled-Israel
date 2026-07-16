@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
   <h1>Maskiled Israel</h1>
   <p><strong>LED Screens E-Commerce Platform — Hebrew RTL</strong></p>
   <p>A production Next.js 16 e-commerce platform built and shipped end-to-end for an LED screens vendor. Hebrew-first RTL, custom Supabase-backed CMS, WhatsApp-driven ordering flow, deployed on Vercel.</p>
@@ -52,13 +52,7 @@ The site is Hebrew-only with full RTL support. Instead of a traditional checkout
 
 ## How This Was Built
 
-**AI-first**: I orchestrate AI coding agents (Claude Code, Codex) through a documented methodology rather than writing every line by hand — the engineering discipline is the point, not the speed.
-
-- **`AGENTS.md` as the single source of truth** — a rules file in the repo defines the architecture, conventions, and hard constraints every agent must obey: money never in floats, Tailwind logical properties only for RTL (no hardcoded `left`/`right`), every admin mutation re-checks role server-side inside the Server Action itself.
-- **Guardrail scripts & audit pipelines** — automated checks run on every change (RTL correctness, Server Action authorization, transactional-money rules), so quality is enforced by tooling, not vigilance.
-- **The engineer decides, the agent executes** — every schema, content flow, and architectural choice on this page was designed and reviewed by me. Agents accelerate implementation; they never own the design.
-
-The result: one engineer delivering a production system at team-level velocity — with the discipline the decisions below reflect.
+Built AI-first: I orchestrate AI coding agents (Claude Code, Codex) under guardrail scripts and audit pipelines that run on every change — but every schema, content flow, and architectural decision here was designed and reviewed by me. Agents accelerate implementation; they don't own the design.
 
 ---
 
