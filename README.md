@@ -48,13 +48,6 @@
 
 The site is Hebrew-only with full RTL support. Instead of a traditional checkout, every product CTA opens a pre-filled WhatsApp conversation with the vendor — chosen deliberately to match how the client actually closes deals.
 
----
-
-## How This Was Built
-
-Built AI-first: I orchestrate AI coding agents (Claude Code, Codex) under guardrail scripts and audit pipelines that run on every change — but every schema, content flow, and architectural decision here was designed and reviewed by me. Agents accelerate implementation; they don't own the design.
-
----
 
 ## Highlights
 
